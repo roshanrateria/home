@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your App Name</title>
+  <style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+   background: linear-gradient(to right, #6a00ff, #4c0080);
+}
+
+header {
+ 
+  padding: 15px;
+  text-align: center;
+}
+
+header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  color: #ffd700; /* Yellow gold */
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px;
+}
+
+nav {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #6a00ff;
+  cursor: pointer;
+  display: inline-block; /* Make links appear as inline-block elements */
+  width: 100%; /* Full width for small screens */
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+}
+
+button {
+  padding: 10px;
+  margin: 10px 0;
+  background-image:linear-gradient(to right, #4c0080,#6a00ff,white);
+  border:1px solid white;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: shift 2s infinite alternate-reverse;
+  width: 100%;
+}
+@keyframes shift {
+    0%,100%{
+        background-image:linear-gradient(to right, #4c0080,#6a00ff,white);
+  
+    }
+    25%{
+        background-image:linear-gradient(to bottom right, #4c0080,#6a00ff,white);
+    }
+    50%{
+        background-image:linear-gradient(to top left, #4c0080,#6a00ff,white);
+  
+    }
+    
+    75%{
+        background-image:linear-gradient(to left #4c0080,#6a00ff,white);
+  
+    }
+}
+
+@media screen and (min-width: 600px) {
+  
+
+  .container {
+    max-width: 600px;
+    margin: auto;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo">
+    <h1>World of Dhanvantari</h1>
+  </header>
+
+  <div class="container">
+    <button onclick="redirectTo('https://roshanrateria.github.io/wod/')">About</button>
+<button onclick="redirectTo('https://huggingface.co/spaces/RoAr777/Burn_detection')">Burn Diagnosis</button>
+<button onclick="redirectTo('https://huggingface.co/spaces/RoAr777/Skin_Disease_Classifier')">Skin Disease Diagnosis</button>
+<button onclick="redirectTo('https://huggingface.co/spaces/RoAr777/dietician')">Diet Planner AI</button>
+
+
+
+    <button onclick="showHelp()">Help</button>
+    <button onclick="showContact()">Contact us</button>
+  </div>
+
+  <script>
+    
+function redirectTo(url) {
+  window.location.href = url;
+}
+
+    function showHelp() {
+      // Add your help functionality here
+      alert("This is the help section");
+    }
+
+    function showContact() {
+      // Add your contact functionality here
+      alert("This is the contact section");
+    }
+  </script>
+</body>
+</html>

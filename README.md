@@ -1,17 +1,11 @@
 # home
 
-## Overview
-
-No repository description is currently provided.
+A static HTML site titled “World Of Dhanvantari”, with a logo asset included in the repository.
 
 ## Technology
 
-HTML
+- HTML
 
-## Repository contents
+## Run
 
-`index.html`, `logo.png`
-
-## Notes
-
-This README documents the repository using metadata and files visible in the repository. See the source tree for the current implementation.
+Open `index.html` in a browser or serve the repository with any static web server.
